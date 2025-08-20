@@ -1,0 +1,431 @@
+{
+  "agent_name": "GDPAgent",
+  "analysis_period": {
+    "start_date": "2020-01-01",
+    "end_date": "2022-12-31"
+  },
+  "data_summary": {
+    "real_gdp": {
+      "mean": 10233.237815286622,
+      "median": 8768.825499999999,
+      "std": 6285.15961754676,
+      "min": 2172.432,
+      "max": 23685.287,
+      "latest": 23685.287,
+      "count": 314,
+      "start_date": "1947-01-01",
+      "end_date": "2025-04-01"
+    },
+    "nominal_gdp": {
+      "mean": 7596.058168789809,
+      "median": 4526.617,
+      "std": 7960.322077933574,
+      "min": 243.164,
+      "max": 30331.117,
+      "latest": 30331.117,
+      "count": 314,
+      "start_date": "1947-01-01",
+      "end_date": "2025-04-01"
+    },
+    "gdp_growth": {
+      "mean": 3.1942492012779553,
+      "median": 3.1,
+      "std": 4.535214653191201,
+      "min": -28.1,
+      "max": 35.2,
+      "latest": 3.0,
+      "count": 313,
+      "start_date": "1947-04-01",
+      "end_date": "2025-04-01"
+    },
+    "gdp_per_capita": {
+      "mean": 38109.729299363054,
+      "median": 36519.5,
+      "std": 15933.68882058638,
+      "min": 15032.0,
+      "max": 69248.0,
+      "latest": 69248.0,
+      "count": 314,
+      "start_date": "1947-01-01",
+      "end_date": "2025-04-01"
+    },
+    "gdp_deflator": {
+      "mean": 53.28964331210192,
+      "median": 51.6215,
+      "std": 34.49546711667501,
+      "min": 11.141,
+      "max": 128.059,
+      "latest": 128.059,
+      "count": 314,
+      "start_date": "1947-01-01",
+      "end_date": "2025-04-01"
+    }
+  },
+  "analysis_results": {
+    "growth_rates": {
+      "real_gdp_qoq": "1947-01-01         NaN\n1947-04-01   -1.060897\n1947-07-01   -0.819517\n1947-10-01    6.263948\n1948-01-01    6.024151\n                ...   \n2024-04-01    2.955918\n2024-07-01    3.038042\n2024-10-01    2.428260\n2025-01-01   -0.503467\n2025-04-01    2.935773\nLength: 314, dtype: float64",
+      "real_gdp_yoy": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    2.611513\n                ...   \n2024-04-01    3.036849\n2024-07-01    2.718769\n2024-10-01    2.533684\n2025-01-01    1.991763\n2025-04-01    1.986664\nLength: 314, dtype: float64",
+      "nominal_gdp_qoq": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01         NaN\n                ...   \n2024-04-01    5.486921\n2024-07-01    4.937844\n2024-10-01    4.751673\n2025-01-01    3.205276\n2025-04-01    4.927167\nLength: 318, dtype: float64",
+      "nominal_gdp_yoy": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01         NaN\n                ...   \n2024-04-01    5.692830\n2024-07-01    5.031580\n2024-10-01    5.042579\n2025-01-01    4.674311\n2025-04-01    4.529813\nLength: 318, dtype: float64",
+      "gdp_per_capita_qoq": "1947-01-01         NaN\n1947-04-01   -2.859391\n1947-07-01   -2.642182\n1947-10-01    4.388590\n1948-01-01    4.393581\n                ...   \n2024-04-01    1.994675\n2024-07-01    2.201405\n2024-10-01    1.805054\n2025-01-01   -1.002811\n2025-04-01    2.411634\nLength: 314, dtype: float64",
+      "gdp_per_capita_yoy": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    0.806663\n                ...   \n2024-04-01    2.053925\n2024-07-01    1.773360\n2024-10-01    1.691768\n2025-01-01    1.253291\n2025-04-01    1.358314\nLength: 314, dtype: float64",
+      "gdp_growth_official": "1947-04-01   -1.0\n1947-07-01   -0.8\n1947-10-01    6.4\n1948-01-01    6.2\n1948-04-01    6.8\n             ... \n2024-04-01    3.0\n2024-07-01    3.1\n2024-10-01    2.4\n2025-01-01   -0.5\n2025-04-01    3.0\nLength: 313, dtype: float64"
+    },
+    "current_values": {
+      "real_gdp": 23685.287,
+      "nominal_gdp": 30331.117,
+      "gdp_growth": 3.0,
+      "gdp_per_capita": 69248.0,
+      "gdp_deflator": 128.059,
+      "real_gdp_qoq": 2.935773011685505,
+      "real_gdp_yoy": 1.9866640865666696,
+      "nominal_gdp_qoq": 4.927166691915286,
+      "nominal_gdp_yoy": 4.5298134034060356,
+      "gdp_per_capita_qoq": 2.4116339546438326,
+      "gdp_per_capita_yoy": 1.3583138173302034,
+      "gdp_growth_official": 3.0
+    },
+    "historical_analysis": {
+      "real_gdp_qoq": {
+        "average_growth": 3.0834482011902,
+        "median_growth": 3.05239862971991,
+        "volatility": 4.462711460801712,
+        "min_growth": -31.63586095129247,
+        "max_growth": 31.320900241632632,
+        "positive_quarters": "268",
+        "negative_quarters": "45",
+        "total_quarters": 313,
+        "recession_periods": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          4,
+          2
+        ],
+        "recession_quarters": 26
+      },
+      "real_gdp_yoy": {
+        "average_growth": 3.148105674964994,
+        "median_growth": 3.0433020872346894,
+        "volatility": 2.62799662855462,
+        "min_growth": -7.5023656368046865,
+        "max_growth": 13.37239384907627,
+        "positive_quarters": "277",
+        "negative_quarters": "33",
+        "total_quarters": 310,
+        "recession_periods": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          4,
+          3,
+          4,
+          3
+        ],
+        "recession_quarters": 31
+      },
+      "nominal_gdp_qoq": {
+        "average_growth": 6.2483104705107815,
+        "median_growth": 5.840533546094306,
+        "volatility": 5.157445741928345,
+        "min_growth": -32.99413277740899,
+        "max_growth": 35.09542099990348,
+        "positive_quarters": "294",
+        "negative_quarters": "19",
+        "total_quarters": 313,
+        "recession_periods": [
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        "recession_quarters": 12
+      },
+      "nominal_gdp_yoy": {
+        "average_growth": 6.426884259652904,
+        "median_growth": 6.107341535788901,
+        "volatility": 3.560647825355578,
+        "min_growth": -6.834742674738092,
+        "max_growth": 19.646189126440404,
+        "positive_quarters": "296",
+        "negative_quarters": "14",
+        "total_quarters": 310,
+        "recession_periods": [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "recession_quarters": 14
+      },
+      "gdp_per_capita_qoq": {
+        "average_growth": 1.9631347344504222,
+        "median_growth": 2.0756727035293743,
+        "volatility": 4.440983060086659,
+        "min_growth": -31.883361371465213,
+        "max_growth": 31.100278551532057,
+        "positive_quarters": "240",
+        "negative_quarters": "73",
+        "total_quarters": 313,
+        "recession_periods": [
+          2,
+          3,
+          4,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          2,
+          2,
+          2
+        ],
+        "recession_quarters": 43
+      },
+      "gdp_per_capita_yoy": {
+        "average_growth": 2.006148039468406,
+        "median_growth": 2.000717182304812,
+        "volatility": 2.5680497889578913,
+        "min_growth": -7.9265849162458935,
+        "max_growth": 12.087395543175482,
+        "positive_quarters": "258",
+        "negative_quarters": "52",
+        "total_quarters": 310,
+        "recession_periods": [
+          4,
+          4,
+          4,
+          3,
+          4,
+          7,
+          3,
+          4,
+          5,
+          3,
+          6,
+          3
+        ],
+        "recession_quarters": 50
+      },
+      "gdp_growth_official": {
+        "average_growth": 3.1942492012779553,
+        "median_growth": 3.1,
+        "volatility": 4.535214653191201,
+        "min_growth": -28.1,
+        "max_growth": 35.2,
+        "positive_quarters": "267",
+        "negative_quarters": "45",
+        "total_quarters": 313,
+        "recession_periods": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          4,
+          2
+        ],
+        "recession_quarters": 26
+      }
+    },
+    "business_cycle": {
+      "current_phase": "expansion",
+      "phase_duration": -2064,
+      "phases": [
+        {
+          "phase": "expansion",
+          "start": "1948-01-01 00:00:00",
+          "end": "1949-01-01 00:00:00",
+          "duration": 5
+        },
+        {
+          "phase": "contraction",
+          "start": "1949-04-01 00:00:00",
+          "end": "1949-10-01 00:00:00",
+          "duration": 7
+        },
+        {
+          "phase": "expansion",
+          "start": "1950-01-01 00:00:00",
+          "end": "1953-10-01 00:00:00",
+          "duration": 22
+        },
+        {
+          "phase": "contraction",
+          "start": "1954-01-01 00:00:00",
+          "end": "1954-07-01 00:00:00",
+          "duration": 24
+        },
+        {
+          "phase": "expansion",
+          "start": "1954-10-01 00:00:00",
+          "end": "1957-10-01 00:00:00",
+          "duration": 36
+        },
+        {
+          "phase": "contraction",
+          "start": "1958-01-01 00:00:00",
+          "end": "1958-07-01 00:00:00",
+          "duration": 38
+        },
+        {
+          "phase": "expansion",
+          "start": "1958-10-01 00:00:00",
+          "end": "1960-10-01 00:00:00",
+          "duration": 46
+        },
+        {
+          "phase": "contraction",
+          "start": "1961-01-01 00:00:00",
+          "end": "1961-01-01 00:00:00",
+          "duration": 46
+        },
+        {
+          "phase": "expansion",
+          "start": "1961-04-01 00:00:00",
+          "end": "1970-07-01 00:00:00",
+          "duration": 83
+        },
+        {
+          "phase": "contraction",
+          "start": "1970-10-01 00:00:00",
+          "end": "1970-10-01 00:00:00",
+          "duration": 83
+        },
+        {
+          "phase": "expansion",
+          "start": "1971-01-01 00:00:00",
+          "end": "1974-01-01 00:00:00",
+          "duration": 95
+        },
+        {
+          "phase": "contraction",
+          "start": "1974-04-01 00:00:00",
+          "end": "1975-04-01 00:00:00",
+          "duration": 99
+        },
+        {
+          "phase": "expansion",
+          "start": "1975-07-01 00:00:00",
+          "end": "1980-01-01 00:00:00",
+          "duration": 117
+        },
+        {
+          "phase": "contraction",
+          "start": "1980-04-01 00:00:00",
+          "end": "1980-10-01 00:00:00",
+          "duration": 119
+        },
+        {
+          "phase": "expansion",
+          "start": "1981-01-01 00:00:00",
+          "end": "1981-10-01 00:00:00",
+          "duration": 122
+        },
+        {
+          "phase": "contraction",
+          "start": "1982-01-01 00:00:00",
+          "end": "1982-10-01 00:00:00",
+          "duration": 125
+        },
+        {
+          "phase": "expansion",
+          "start": "1983-01-01 00:00:00",
+          "end": "1990-10-01 00:00:00",
+          "duration": 156
+        },
+        {
+          "phase": "contraction",
+          "start": "1991-01-01 00:00:00",
+          "end": "1991-07-01 00:00:00",
+          "duration": 158
+        },
+        {
+          "phase": "expansion",
+          "start": "1991-10-01 00:00:00",
+          "end": "2008-07-01 00:00:00",
+          "duration": 225
+        },
+        {
+          "phase": "contraction",
+          "start": "2008-10-01 00:00:00",
+          "end": "2009-07-01 00:00:00",
+          "duration": 228
+        },
+        {
+          "phase": "expansion",
+          "start": "2009-10-01 00:00:00",
+          "end": "2020-01-01 00:00:00",
+          "duration": 269
+        },
+        {
+          "phase": "contraction",
+          "start": "2020-04-01 00:00:00",
+          "end": "2020-10-01 00:00:00",
+          "duration": 271
+        },
+        {
+          "phase": "expansion",
+          "start": "2021-01-01 00:00:00",
+          "end": "2025-04-01 00:00:00",
+          "duration": -2064
+        }
+      ],
+      "average_expansion_length": -74.0,
+      "average_contraction_length": 108.9090909090909
+    },
+    "price_analysis": {
+      "implied_deflator": "1947-01-01     11.140611\n1947-04-01     11.299045\n1947-07-01     11.488737\n1947-10-01     11.772067\n1948-01-01     11.865167\n                 ...    \n2024-04-01    124.943298\n2024-07-01    125.532243\n2024-10-01    126.257002\n2025-01-01    127.429114\n2025-04-01    128.058896\nLength: 314, dtype: float64",
+      "deflator_growth": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    6.503733\n                ...   \n2024-04-01    2.577700\n2024-07-01    2.251595\n2024-10-01    2.446899\n2025-01-01    2.630161\n2025-04-01    2.493610\nLength: 314, dtype: float64",
+      "current_deflator_growth": 2.49360966908454
+    },
+    "productivity_analysis": {
+      "average_productivity_growth": 2.006148039468406,
+      "recent_productivity_trend": 1.8431205901590366,
+      "productivity_volatility": 2.5680497889578913,
+      "moving_average": "1948-01-01         NaN\n1948-04-01         NaN\n1948-07-01         NaN\n1948-10-01         NaN\n1949-01-01         NaN\n                ...   \n2024-04-01    1.810789\n2024-07-01    1.822551\n2024-10-01    1.955145\n2025-01-01    1.923594\n2025-04-01    1.843121\nLength: 310, dtype: float64"
+    },
+    "strength_indicators": {
+      "growth_relative_to_average": -1.1614415883983242,
+      "growth_percentile": 26.129032258064516
+    }
+  },
+  "insights": {
+    "summary": {
+      "current_gdp_growth": "1.99%",
+      "historical_average_growth": "3.15%",
+      "growth_vs_historical": "-1.16 pp vs historical average",
+      "cycle_phase_duration": "-2064 quarters",
+      "average_productivity_growth": "2.01%",
+      "gdp_deflator_growth": "2.49%"
+    },
+    "alerts": [],
+    "observations": [],
+    "economic_assessment": {
+      "growth_status": "Moderate Growth",
+      "business_cycle_phase": "Expansion",
+      "recession_risk": "Low"
+    }
+  },
+  "timestamp": "2025-08-20T17:02:58.048404"
+}
