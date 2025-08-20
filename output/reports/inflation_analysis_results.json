@@ -1,0 +1,193 @@
+{
+  "agent_name": "InflationAgent",
+  "analysis_period": {
+    "start_date": "2023-01-01",
+    "end_date": "2025-08-20"
+  },
+  "data_summary": {
+    "cpi_all": {
+      "mean": 122.99642205726404,
+      "median": 109.5,
+      "std": 88.43614959396633,
+      "min": 21.48,
+      "max": 322.132,
+      "latest": 322.132,
+      "count": 943,
+      "start_date": "1947-01-01",
+      "end_date": "2025-07-01"
+    },
+    "core_cpi": {
+      "mean": 140.931255164034,
+      "median": 140.9,
+      "std": 87.65267702044048,
+      "min": 28.5,
+      "max": 328.656,
+      "latest": 328.656,
+      "count": 823,
+      "start_date": "1957-01-01",
+      "end_date": "2025-07-01"
+    },
+    "pce": {
+      "mean": 60.473741854636586,
+      "median": 63.034,
+      "std": 32.661192111957284,
+      "min": 15.164,
+      "max": 126.555,
+      "latest": 126.555,
+      "count": 798,
+      "start_date": "1959-01-01",
+      "end_date": "2025-06-01"
+    },
+    "core_pce": {
+      "mean": 60.63521052631579,
+      "median": 64.078,
+      "std": 32.34010639607886,
+      "min": 15.501,
+      "max": 125.932,
+      "latest": 125.932,
+      "count": 798,
+      "start_date": "1959-01-01",
+      "end_date": "2025-06-01"
+    },
+    "producer_price": {
+      "mean": 79.00615173945225,
+      "median": 35.3,
+      "std": 71.24925072033257,
+      "min": 10.3,
+      "max": 280.251,
+      "latest": 262.528,
+      "count": 1351,
+      "start_date": "1913-01-01",
+      "end_date": "2025-07-01"
+    }
+  },
+  "analysis_results": {
+    "inflation_rates": {
+      "cpi_all_rate": "1947-01-01         NaN\n1947-02-01         NaN\n1947-03-01         NaN\n1947-04-01         NaN\n1947-05-01         NaN\n                ...   \n2025-03-01    2.405585\n2025-04-01    2.333747\n2025-05-01    2.375934\n2025-06-01    2.672683\n2025-07-01    2.731801\nLength: 943, dtype: float64",
+      "core_cpi_rate": "1957-01-01         NaN\n1957-02-01         NaN\n1957-03-01         NaN\n1957-04-01         NaN\n1957-05-01         NaN\n                ...   \n2025-03-01    2.808733\n2025-04-01    2.781521\n2025-05-01    2.767149\n2025-06-01    2.907870\n2025-07-01    3.048603\nLength: 823, dtype: float64",
+      "pce_rate": "1959-01-01         NaN\n1959-02-01         NaN\n1959-03-01         NaN\n1959-04-01         NaN\n1959-05-01         NaN\n                ...   \n2025-02-01    2.676049\n2025-03-01    2.342326\n2025-04-01    2.236396\n2025-05-01    2.415925\n2025-06-01    2.582496\nLength: 798, dtype: float64",
+      "core_pce_rate": "1959-01-01         NaN\n1959-02-01         NaN\n1959-03-01         NaN\n1959-04-01         NaN\n1959-05-01         NaN\n                ...   \n2025-02-01    2.949316\n2025-03-01    2.699686\n2025-04-01    2.622401\n2025-05-01    2.757712\n2025-06-01    2.793241\nLength: 798, dtype: float64",
+      "producer_price": "1913-01-01     12.100\n1913-02-01     12.000\n1913-03-01     12.000\n1913-04-01     12.000\n1913-05-01     11.900\n               ...   \n2025-03-01    258.525\n2025-04-01    258.369\n2025-05-01    258.606\n2025-06-01    260.648\n2025-07-01    262.528\nLength: 1351, dtype: float64"
+    },
+    "current_levels": {
+      "cpi_all_rate": 2.7318012794754543,
+      "core_cpi_rate": 3.0486026845763847,
+      "pce_rate": 2.582496413199431,
+      "core_pce_rate": 2.793241368051591,
+      "producer_price": 262.528
+    },
+    "historical_averages": {
+      "cpi_all_rate": {
+        "all_time": 3.524147619069878,
+        "5_year": 4.36728249316278,
+        "1_year": 2.627902251211824
+      },
+      "core_cpi_rate": {
+        "all_time": 3.670140357480265,
+        "5_year": 4.075140008348684,
+        "1_year": 3.093157519759415
+      },
+      "pce_rate": {
+        "all_time": 3.287334745849776,
+        "5_year": 3.7580898436134893,
+        "1_year": 2.4224991188922
+      },
+      "core_pce_rate": {
+        "all_time": 3.235090133533273,
+        "5_year": 3.5928538029480603,
+        "1_year": 2.7589175301787687
+      },
+      "producer_price": {
+        "all_time": 79.00615173945225,
+        "5_year": 247.10018333333335,
+        "1_year": 256.9495
+      }
+    },
+    "volatility": {
+      "cpi_all_rate": {
+        "standard_deviation": 2.8779127622177443,
+        "coefficient_variation": 0.8166266210429932,
+        "rolling_volatility": "1948-01-01         NaN\n1948-02-01         NaN\n1948-03-01         NaN\n1948-04-01         NaN\n1948-05-01         NaN\n                ...   \n2025-03-01    1.109548\n2025-04-01    1.109284\n2025-05-01    1.127684\n2025-06-01    1.268330\n2025-07-01    1.274313\nLength: 931, dtype: float64"
+      },
+      "core_cpi_rate": {
+        "standard_deviation": 2.47407070591805,
+        "coefficient_variation": 0.674107926383672,
+        "rolling_volatility": "1958-01-01         NaN\n1958-02-01         NaN\n1958-03-01         NaN\n1958-04-01         NaN\n1958-05-01         NaN\n                ...   \n2025-03-01    0.601713\n2025-04-01    0.590773\n2025-05-01    0.552657\n2025-06-01    0.618097\n2025-07-01    0.671116\nLength: 811, dtype: float64"
+      },
+      "pce_rate": {
+        "standard_deviation": 2.4040530034472694,
+        "coefficient_variation": 0.7313076365229795,
+        "rolling_volatility": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    1.040124\n2025-03-01    1.111368\n2025-04-01    1.118363\n2025-05-01    1.173354\n2025-06-01    1.188499\nLength: 786, dtype: float64"
+      },
+      "core_pce_rate": {
+        "standard_deviation": 2.1030108950234325,
+        "coefficient_variation": 0.6500625355765851,
+        "rolling_volatility": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    0.734360\n2025-03-01    0.827012\n2025-04-01    0.824999\n2025-05-01    0.787040\n2025-06-01    0.782734\nLength: 786, dtype: float64"
+      },
+      "producer_price": {
+        "standard_deviation": 71.24925072033257,
+        "coefficient_variation": 0.9018190248690948,
+        "rolling_volatility": "1913-01-01         NaN\n1913-02-01         NaN\n1913-03-01         NaN\n1913-04-01         NaN\n1913-05-01         NaN\n                ...   \n2025-03-01    0.118715\n2025-04-01    0.114666\n2025-05-01    0.109275\n2025-06-01    0.113609\n2025-07-01    0.115233\nLength: 1351, dtype: float64"
+      }
+    },
+    "trends": {
+      "cpi_all_rate": {
+        "moving_average_12m": "1948-01-01         NaN\n1948-02-01         NaN\n1948-03-01         NaN\n1948-04-01         NaN\n1948-05-01         NaN\n                ...   \n2025-03-01    2.826844\n2025-04-01    2.741819\n2025-05-01    2.669908\n2025-06-01    2.645124\n2025-07-01    2.627902\nLength: 931, dtype: float64",
+        "recent_average": 2.737842983834899,
+        "previous_average": 3.0313611525402266,
+        "trend_direction": "decreasing",
+        "trend_magnitude": 0.29351816870532765
+      },
+      "core_cpi_rate": {
+        "moving_average_12m": "1958-01-01         NaN\n1958-02-01         NaN\n1958-03-01         NaN\n1958-04-01         NaN\n1958-05-01         NaN\n                ...   \n2025-03-01    3.259641\n2025-04-01    3.189467\n2025-05-01    3.137519\n2025-06-01    3.108129\n2025-07-01    3.093158\nLength: 811, dtype: float64",
+        "recent_average": 3.188561620890585,
+        "previous_average": 3.536980118686793,
+        "trend_direction": "decreasing",
+        "trend_magnitude": 0.3484184977962079
+      },
+      "pce_rate": {
+        "moving_average_12m": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    2.502194\n2025-03-01    2.463252\n2025-04-01    2.422895\n2025-05-01    2.410305\n2025-06-01    2.422499\nLength: 786, dtype: float64",
+        "recent_average": 2.4527008971989934,
+        "previous_average": 2.5988253182903747,
+        "trend_direction": "decreasing",
+        "trend_magnitude": 0.14612442109138124
+      },
+      "core_pce_rate": {
+        "moving_average_12m": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    2.783051\n2025-03-01    2.759724\n2025-04-01    2.737836\n2025-05-01    2.745354\n2025-06-01    2.758918\nLength: 786, dtype: float64",
+        "recent_average": 2.7610385147467293,
+        "previous_average": 2.9127431041627285,
+        "trend_direction": "decreasing",
+        "trend_magnitude": 0.15170458941599918
+      },
+      "producer_price": {
+        "moving_average_12m": "1913-01-01           NaN\n1913-02-01           NaN\n1913-03-01           NaN\n1913-04-01           NaN\n1913-05-01           NaN\n                 ...    \n2025-03-01    255.730750\n2025-04-01    255.846667\n2025-05-01    256.121083\n2025-06-01    256.515583\n2025-07-01    256.949500\nLength: 1351, dtype: float64",
+        "recent_average": 256.1014166666667,
+        "previous_average": 254.57656944444446,
+        "trend_direction": "increasing",
+        "trend_magnitude": 1.5248472222222347
+      }
+    },
+    "core_vs_headline": {
+      "correlation": 0.9263726126387111,
+      "average_difference": 0.022918612281728788,
+      "current_difference": -0.31680140510093047
+    }
+  },
+  "insights": {
+    "summary": {
+      "current_headline_inflation": "2.73%",
+      "current_core_inflation": "3.05%",
+      "distance_from_fed_target": "+0.58 percentage points"
+    },
+    "alerts": [],
+    "observations": [
+      "Producer Price is increasing with magnitude of 1.52 percentage points",
+      "Cpi All shows high volatility (coefficient of variation: 0.82)",
+      "Core Cpi shows high volatility (coefficient of variation: 0.67)",
+      "Pce shows high volatility (coefficient of variation: 0.73)",
+      "Core Pce shows high volatility (coefficient of variation: 0.65)",
+      "Producer Price shows high volatility (coefficient of variation: 0.90)"
+    ]
+  },
+  "timestamp": "2025-08-20T17:04:50.903051"
+}
