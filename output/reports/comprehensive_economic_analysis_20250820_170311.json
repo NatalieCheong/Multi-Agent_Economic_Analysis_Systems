@@ -1,0 +1,929 @@
+{
+  "analysis_metadata": {
+    "start_date": "2020-01-01",
+    "end_date": "2022-12-31",
+    "analysis_timestamp": "2025-08-20T17:03:11.537820",
+    "agents_used": [
+      "inflation",
+      "gdp",
+      "trade"
+    ]
+  },
+  "individual_results": {
+    "inflation": {
+      "agent_name": "InflationAgent",
+      "analysis_period": {
+        "start_date": "2020-01-01",
+        "end_date": "2022-12-31"
+      },
+      "data_summary": {
+        "cpi_all": {
+          "mean": 122.99642205726404,
+          "median": 109.5,
+          "std": 88.43614959396633,
+          "min": 21.48,
+          "max": 322.132,
+          "latest": 322.132,
+          "count": 943,
+          "start_date": "1947-01-01",
+          "end_date": "2025-07-01"
+        },
+        "core_cpi": {
+          "mean": 140.931255164034,
+          "median": 140.9,
+          "std": 87.65267702044048,
+          "min": 28.5,
+          "max": 328.656,
+          "latest": 328.656,
+          "count": 823,
+          "start_date": "1957-01-01",
+          "end_date": "2025-07-01"
+        },
+        "pce": {
+          "mean": 60.473741854636586,
+          "median": 63.034,
+          "std": 32.661192111957284,
+          "min": 15.164,
+          "max": 126.555,
+          "latest": 126.555,
+          "count": 798,
+          "start_date": "1959-01-01",
+          "end_date": "2025-06-01"
+        },
+        "core_pce": {
+          "mean": 60.63521052631579,
+          "median": 64.078,
+          "std": 32.34010639607886,
+          "min": 15.501,
+          "max": 125.932,
+          "latest": 125.932,
+          "count": 798,
+          "start_date": "1959-01-01",
+          "end_date": "2025-06-01"
+        },
+        "producer_price": {
+          "mean": 79.00615173945225,
+          "median": 35.3,
+          "std": 71.24925072033257,
+          "min": 10.3,
+          "max": 280.251,
+          "latest": 262.528,
+          "count": 1351,
+          "start_date": "1913-01-01",
+          "end_date": "2025-07-01"
+        }
+      },
+      "analysis_results": {
+        "inflation_rates": {
+          "cpi_all_rate": "1947-01-01         NaN\n1947-02-01         NaN\n1947-03-01         NaN\n1947-04-01         NaN\n1947-05-01         NaN\n                ...   \n2025-03-01    2.405585\n2025-04-01    2.333747\n2025-05-01    2.375934\n2025-06-01    2.672683\n2025-07-01    2.731801\nLength: 943, dtype: float64",
+          "core_cpi_rate": "1957-01-01         NaN\n1957-02-01         NaN\n1957-03-01         NaN\n1957-04-01         NaN\n1957-05-01         NaN\n                ...   \n2025-03-01    2.808733\n2025-04-01    2.781521\n2025-05-01    2.767149\n2025-06-01    2.907870\n2025-07-01    3.048603\nLength: 823, dtype: float64",
+          "pce_rate": "1959-01-01         NaN\n1959-02-01         NaN\n1959-03-01         NaN\n1959-04-01         NaN\n1959-05-01         NaN\n                ...   \n2025-02-01    2.676049\n2025-03-01    2.342326\n2025-04-01    2.236396\n2025-05-01    2.415925\n2025-06-01    2.582496\nLength: 798, dtype: float64",
+          "core_pce_rate": "1959-01-01         NaN\n1959-02-01         NaN\n1959-03-01         NaN\n1959-04-01         NaN\n1959-05-01         NaN\n                ...   \n2025-02-01    2.949316\n2025-03-01    2.699686\n2025-04-01    2.622401\n2025-05-01    2.757712\n2025-06-01    2.793241\nLength: 798, dtype: float64",
+          "producer_price": "1913-01-01     12.100\n1913-02-01     12.000\n1913-03-01     12.000\n1913-04-01     12.000\n1913-05-01     11.900\n               ...   \n2025-03-01    258.525\n2025-04-01    258.369\n2025-05-01    258.606\n2025-06-01    260.648\n2025-07-01    262.528\nLength: 1351, dtype: float64"
+        },
+        "current_levels": {
+          "cpi_all_rate": 2.7318012794754543,
+          "core_cpi_rate": 3.0486026845763847,
+          "pce_rate": 2.582496413199431,
+          "core_pce_rate": 2.793241368051591,
+          "producer_price": 262.528
+        },
+        "historical_averages": {
+          "cpi_all_rate": {
+            "all_time": 3.524147619069878,
+            "5_year": 4.36728249316278,
+            "1_year": 2.627902251211824
+          },
+          "core_cpi_rate": {
+            "all_time": 3.670140357480265,
+            "5_year": 4.075140008348684,
+            "1_year": 3.093157519759415
+          },
+          "pce_rate": {
+            "all_time": 3.287334745849776,
+            "5_year": 3.7580898436134893,
+            "1_year": 2.4224991188922
+          },
+          "core_pce_rate": {
+            "all_time": 3.235090133533273,
+            "5_year": 3.5928538029480603,
+            "1_year": 2.7589175301787687
+          },
+          "producer_price": {
+            "all_time": 79.00615173945225,
+            "5_year": 247.10018333333335,
+            "1_year": 256.9495
+          }
+        },
+        "volatility": {
+          "cpi_all_rate": {
+            "standard_deviation": 2.8779127622177443,
+            "coefficient_variation": 0.8166266210429932,
+            "rolling_volatility": "1948-01-01         NaN\n1948-02-01         NaN\n1948-03-01         NaN\n1948-04-01         NaN\n1948-05-01         NaN\n                ...   \n2025-03-01    1.109548\n2025-04-01    1.109284\n2025-05-01    1.127684\n2025-06-01    1.268330\n2025-07-01    1.274313\nLength: 931, dtype: float64"
+          },
+          "core_cpi_rate": {
+            "standard_deviation": 2.47407070591805,
+            "coefficient_variation": 0.674107926383672,
+            "rolling_volatility": "1958-01-01         NaN\n1958-02-01         NaN\n1958-03-01         NaN\n1958-04-01         NaN\n1958-05-01         NaN\n                ...   \n2025-03-01    0.601713\n2025-04-01    0.590773\n2025-05-01    0.552657\n2025-06-01    0.618097\n2025-07-01    0.671116\nLength: 811, dtype: float64"
+          },
+          "pce_rate": {
+            "standard_deviation": 2.4040530034472694,
+            "coefficient_variation": 0.7313076365229795,
+            "rolling_volatility": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    1.040124\n2025-03-01    1.111368\n2025-04-01    1.118363\n2025-05-01    1.173354\n2025-06-01    1.188499\nLength: 786, dtype: float64"
+          },
+          "core_pce_rate": {
+            "standard_deviation": 2.1030108950234325,
+            "coefficient_variation": 0.6500625355765851,
+            "rolling_volatility": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    0.734360\n2025-03-01    0.827012\n2025-04-01    0.824999\n2025-05-01    0.787040\n2025-06-01    0.782734\nLength: 786, dtype: float64"
+          },
+          "producer_price": {
+            "standard_deviation": 71.24925072033257,
+            "coefficient_variation": 0.9018190248690948,
+            "rolling_volatility": "1913-01-01         NaN\n1913-02-01         NaN\n1913-03-01         NaN\n1913-04-01         NaN\n1913-05-01         NaN\n                ...   \n2025-03-01    0.118715\n2025-04-01    0.114666\n2025-05-01    0.109275\n2025-06-01    0.113609\n2025-07-01    0.115233\nLength: 1351, dtype: float64"
+          }
+        },
+        "trends": {
+          "cpi_all_rate": {
+            "moving_average_12m": "1948-01-01         NaN\n1948-02-01         NaN\n1948-03-01         NaN\n1948-04-01         NaN\n1948-05-01         NaN\n                ...   \n2025-03-01    2.826844\n2025-04-01    2.741819\n2025-05-01    2.669908\n2025-06-01    2.645124\n2025-07-01    2.627902\nLength: 931, dtype: float64",
+            "recent_average": 2.737842983834899,
+            "previous_average": 3.0313611525402266,
+            "trend_direction": "decreasing",
+            "trend_magnitude": 0.29351816870532765
+          },
+          "core_cpi_rate": {
+            "moving_average_12m": "1958-01-01         NaN\n1958-02-01         NaN\n1958-03-01         NaN\n1958-04-01         NaN\n1958-05-01         NaN\n                ...   \n2025-03-01    3.259641\n2025-04-01    3.189467\n2025-05-01    3.137519\n2025-06-01    3.108129\n2025-07-01    3.093158\nLength: 811, dtype: float64",
+            "recent_average": 3.188561620890585,
+            "previous_average": 3.536980118686793,
+            "trend_direction": "decreasing",
+            "trend_magnitude": 0.3484184977962079
+          },
+          "pce_rate": {
+            "moving_average_12m": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    2.502194\n2025-03-01    2.463252\n2025-04-01    2.422895\n2025-05-01    2.410305\n2025-06-01    2.422499\nLength: 786, dtype: float64",
+            "recent_average": 2.4527008971989934,
+            "previous_average": 2.5988253182903747,
+            "trend_direction": "decreasing",
+            "trend_magnitude": 0.14612442109138124
+          },
+          "core_pce_rate": {
+            "moving_average_12m": "1960-01-01         NaN\n1960-02-01         NaN\n1960-03-01         NaN\n1960-04-01         NaN\n1960-05-01         NaN\n                ...   \n2025-02-01    2.783051\n2025-03-01    2.759724\n2025-04-01    2.737836\n2025-05-01    2.745354\n2025-06-01    2.758918\nLength: 786, dtype: float64",
+            "recent_average": 2.7610385147467293,
+            "previous_average": 2.9127431041627285,
+            "trend_direction": "decreasing",
+            "trend_magnitude": 0.15170458941599918
+          },
+          "producer_price": {
+            "moving_average_12m": "1913-01-01           NaN\n1913-02-01           NaN\n1913-03-01           NaN\n1913-04-01           NaN\n1913-05-01           NaN\n                 ...    \n2025-03-01    255.730750\n2025-04-01    255.846667\n2025-05-01    256.121083\n2025-06-01    256.515583\n2025-07-01    256.949500\nLength: 1351, dtype: float64",
+            "recent_average": 256.1014166666667,
+            "previous_average": 254.57656944444446,
+            "trend_direction": "increasing",
+            "trend_magnitude": 1.5248472222222347
+          }
+        },
+        "core_vs_headline": {
+          "correlation": 0.9263726126387111,
+          "average_difference": 0.022918612281728788,
+          "current_difference": -0.31680140510093047
+        }
+      },
+      "insights": {
+        "summary": {
+          "current_headline_inflation": "2.73%",
+          "current_core_inflation": "3.05%",
+          "distance_from_fed_target": "+0.58 percentage points"
+        },
+        "alerts": [],
+        "observations": [
+          "Producer Price is increasing with magnitude of 1.52 percentage points",
+          "Cpi All shows high volatility (coefficient of variation: 0.82)",
+          "Core Cpi shows high volatility (coefficient of variation: 0.67)",
+          "Pce shows high volatility (coefficient of variation: 0.73)",
+          "Core Pce shows high volatility (coefficient of variation: 0.65)",
+          "Producer Price shows high volatility (coefficient of variation: 0.90)"
+        ]
+      },
+      "timestamp": "2025-08-20T17:02:46.825326"
+    },
+    "gdp": {
+      "agent_name": "GDPAgent",
+      "analysis_period": {
+        "start_date": "2020-01-01",
+        "end_date": "2022-12-31"
+      },
+      "data_summary": {
+        "real_gdp": {
+          "mean": 10233.237815286622,
+          "median": 8768.825499999999,
+          "std": 6285.15961754676,
+          "min": 2172.432,
+          "max": 23685.287,
+          "latest": 23685.287,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        },
+        "nominal_gdp": {
+          "mean": 7596.058168789809,
+          "median": 4526.617,
+          "std": 7960.322077933574,
+          "min": 243.164,
+          "max": 30331.117,
+          "latest": 30331.117,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        },
+        "gdp_growth": {
+          "mean": 3.1942492012779553,
+          "median": 3.1,
+          "std": 4.535214653191201,
+          "min": -28.1,
+          "max": 35.2,
+          "latest": 3.0,
+          "count": 313,
+          "start_date": "1947-04-01",
+          "end_date": "2025-04-01"
+        },
+        "gdp_per_capita": {
+          "mean": 38109.729299363054,
+          "median": 36519.5,
+          "std": 15933.68882058638,
+          "min": 15032.0,
+          "max": 69248.0,
+          "latest": 69248.0,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        },
+        "gdp_deflator": {
+          "mean": 53.28964331210192,
+          "median": 51.6215,
+          "std": 34.49546711667501,
+          "min": 11.141,
+          "max": 128.059,
+          "latest": 128.059,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        }
+      },
+      "analysis_results": {
+        "growth_rates": {
+          "real_gdp_qoq": "1947-01-01         NaN\n1947-04-01   -1.060897\n1947-07-01   -0.819517\n1947-10-01    6.263948\n1948-01-01    6.024151\n                ...   \n2024-04-01    2.955918\n2024-07-01    3.038042\n2024-10-01    2.428260\n2025-01-01   -0.503467\n2025-04-01    2.935773\nLength: 314, dtype: float64",
+          "real_gdp_yoy": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    2.611513\n                ...   \n2024-04-01    3.036849\n2024-07-01    2.718769\n2024-10-01    2.533684\n2025-01-01    1.991763\n2025-04-01    1.986664\nLength: 314, dtype: float64",
+          "nominal_gdp_qoq": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01         NaN\n                ...   \n2024-04-01    5.486921\n2024-07-01    4.937844\n2024-10-01    4.751673\n2025-01-01    3.205276\n2025-04-01    4.927167\nLength: 318, dtype: float64",
+          "nominal_gdp_yoy": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01         NaN\n                ...   \n2024-04-01    5.692830\n2024-07-01    5.031580\n2024-10-01    5.042579\n2025-01-01    4.674311\n2025-04-01    4.529813\nLength: 318, dtype: float64",
+          "gdp_per_capita_qoq": "1947-01-01         NaN\n1947-04-01   -2.859391\n1947-07-01   -2.642182\n1947-10-01    4.388590\n1948-01-01    4.393581\n                ...   \n2024-04-01    1.994675\n2024-07-01    2.201405\n2024-10-01    1.805054\n2025-01-01   -1.002811\n2025-04-01    2.411634\nLength: 314, dtype: float64",
+          "gdp_per_capita_yoy": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    0.806663\n                ...   \n2024-04-01    2.053925\n2024-07-01    1.773360\n2024-10-01    1.691768\n2025-01-01    1.253291\n2025-04-01    1.358314\nLength: 314, dtype: float64",
+          "gdp_growth_official": "1947-04-01   -1.0\n1947-07-01   -0.8\n1947-10-01    6.4\n1948-01-01    6.2\n1948-04-01    6.8\n             ... \n2024-04-01    3.0\n2024-07-01    3.1\n2024-10-01    2.4\n2025-01-01   -0.5\n2025-04-01    3.0\nLength: 313, dtype: float64"
+        },
+        "current_values": {
+          "real_gdp": 23685.287,
+          "nominal_gdp": 30331.117,
+          "gdp_growth": 3.0,
+          "gdp_per_capita": 69248.0,
+          "gdp_deflator": 128.059,
+          "real_gdp_qoq": 2.935773011685505,
+          "real_gdp_yoy": 1.9866640865666696,
+          "nominal_gdp_qoq": 4.927166691915286,
+          "nominal_gdp_yoy": 4.5298134034060356,
+          "gdp_per_capita_qoq": 2.4116339546438326,
+          "gdp_per_capita_yoy": 1.3583138173302034,
+          "gdp_growth_official": 3.0
+        },
+        "historical_analysis": {
+          "real_gdp_qoq": {
+            "average_growth": 3.0834482011902,
+            "median_growth": 3.05239862971991,
+            "volatility": 4.462711460801712,
+            "min_growth": -31.63586095129247,
+            "max_growth": 31.320900241632632,
+            "positive_quarters": "268",
+            "negative_quarters": "45",
+            "total_quarters": 313,
+            "recession_periods": [
+              2,
+              2,
+              3,
+              2,
+              2,
+              3,
+              2,
+              2,
+              2,
+              4,
+              2
+            ],
+            "recession_quarters": 26
+          },
+          "real_gdp_yoy": {
+            "average_growth": 3.148105674964994,
+            "median_growth": 3.0433020872346894,
+            "volatility": 2.62799662855462,
+            "min_growth": -7.5023656368046865,
+            "max_growth": 13.37239384907627,
+            "positive_quarters": "277",
+            "negative_quarters": "33",
+            "total_quarters": 310,
+            "recession_periods": [
+              3,
+              3,
+              3,
+              5,
+              3,
+              4,
+              3,
+              4,
+              3
+            ],
+            "recession_quarters": 31
+          },
+          "nominal_gdp_qoq": {
+            "average_growth": 6.2483104705107815,
+            "median_growth": 5.840533546094306,
+            "volatility": 5.157445741928345,
+            "min_growth": -32.99413277740899,
+            "max_growth": 35.09542099990348,
+            "positive_quarters": "294",
+            "negative_quarters": "19",
+            "total_quarters": 313,
+            "recession_periods": [
+              2,
+              3,
+              2,
+              3,
+              2
+            ],
+            "recession_quarters": 12
+          },
+          "nominal_gdp_yoy": {
+            "average_growth": 6.426884259652904,
+            "median_growth": 6.107341535788901,
+            "volatility": 3.560647825355578,
+            "min_growth": -6.834742674738092,
+            "max_growth": 19.646189126440404,
+            "positive_quarters": "296",
+            "negative_quarters": "14",
+            "total_quarters": 310,
+            "recession_periods": [
+              3,
+              3,
+              2,
+              4,
+              2
+            ],
+            "recession_quarters": 14
+          },
+          "gdp_per_capita_qoq": {
+            "average_growth": 1.9631347344504222,
+            "median_growth": 2.0756727035293743,
+            "volatility": 4.440983060086659,
+            "min_growth": -31.883361371465213,
+            "max_growth": 31.100278551532057,
+            "positive_quarters": "240",
+            "negative_quarters": "73",
+            "total_quarters": 313,
+            "recession_periods": [
+              2,
+              3,
+              4,
+              2,
+              2,
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4,
+              2,
+              2,
+              2
+            ],
+            "recession_quarters": 43
+          },
+          "gdp_per_capita_yoy": {
+            "average_growth": 2.006148039468406,
+            "median_growth": 2.000717182304812,
+            "volatility": 2.5680497889578913,
+            "min_growth": -7.9265849162458935,
+            "max_growth": 12.087395543175482,
+            "positive_quarters": "258",
+            "negative_quarters": "52",
+            "total_quarters": 310,
+            "recession_periods": [
+              4,
+              4,
+              4,
+              3,
+              4,
+              7,
+              3,
+              4,
+              5,
+              3,
+              6,
+              3
+            ],
+            "recession_quarters": 50
+          },
+          "gdp_growth_official": {
+            "average_growth": 3.1942492012779553,
+            "median_growth": 3.1,
+            "volatility": 4.535214653191201,
+            "min_growth": -28.1,
+            "max_growth": 35.2,
+            "positive_quarters": "267",
+            "negative_quarters": "45",
+            "total_quarters": 313,
+            "recession_periods": [
+              2,
+              2,
+              3,
+              2,
+              2,
+              3,
+              2,
+              2,
+              2,
+              4,
+              2
+            ],
+            "recession_quarters": 26
+          }
+        },
+        "business_cycle": {
+          "current_phase": "expansion",
+          "phase_duration": -2064,
+          "phases": [
+            {
+              "phase": "expansion",
+              "start": "1948-01-01 00:00:00",
+              "end": "1949-01-01 00:00:00",
+              "duration": 5
+            },
+            {
+              "phase": "contraction",
+              "start": "1949-04-01 00:00:00",
+              "end": "1949-10-01 00:00:00",
+              "duration": 7
+            },
+            {
+              "phase": "expansion",
+              "start": "1950-01-01 00:00:00",
+              "end": "1953-10-01 00:00:00",
+              "duration": 22
+            },
+            {
+              "phase": "contraction",
+              "start": "1954-01-01 00:00:00",
+              "end": "1954-07-01 00:00:00",
+              "duration": 24
+            },
+            {
+              "phase": "expansion",
+              "start": "1954-10-01 00:00:00",
+              "end": "1957-10-01 00:00:00",
+              "duration": 36
+            },
+            {
+              "phase": "contraction",
+              "start": "1958-01-01 00:00:00",
+              "end": "1958-07-01 00:00:00",
+              "duration": 38
+            },
+            {
+              "phase": "expansion",
+              "start": "1958-10-01 00:00:00",
+              "end": "1960-10-01 00:00:00",
+              "duration": 46
+            },
+            {
+              "phase": "contraction",
+              "start": "1961-01-01 00:00:00",
+              "end": "1961-01-01 00:00:00",
+              "duration": 46
+            },
+            {
+              "phase": "expansion",
+              "start": "1961-04-01 00:00:00",
+              "end": "1970-07-01 00:00:00",
+              "duration": 83
+            },
+            {
+              "phase": "contraction",
+              "start": "1970-10-01 00:00:00",
+              "end": "1970-10-01 00:00:00",
+              "duration": 83
+            },
+            {
+              "phase": "expansion",
+              "start": "1971-01-01 00:00:00",
+              "end": "1974-01-01 00:00:00",
+              "duration": 95
+            },
+            {
+              "phase": "contraction",
+              "start": "1974-04-01 00:00:00",
+              "end": "1975-04-01 00:00:00",
+              "duration": 99
+            },
+            {
+              "phase": "expansion",
+              "start": "1975-07-01 00:00:00",
+              "end": "1980-01-01 00:00:00",
+              "duration": 117
+            },
+            {
+              "phase": "contraction",
+              "start": "1980-04-01 00:00:00",
+              "end": "1980-10-01 00:00:00",
+              "duration": 119
+            },
+            {
+              "phase": "expansion",
+              "start": "1981-01-01 00:00:00",
+              "end": "1981-10-01 00:00:00",
+              "duration": 122
+            },
+            {
+              "phase": "contraction",
+              "start": "1982-01-01 00:00:00",
+              "end": "1982-10-01 00:00:00",
+              "duration": 125
+            },
+            {
+              "phase": "expansion",
+              "start": "1983-01-01 00:00:00",
+              "end": "1990-10-01 00:00:00",
+              "duration": 156
+            },
+            {
+              "phase": "contraction",
+              "start": "1991-01-01 00:00:00",
+              "end": "1991-07-01 00:00:00",
+              "duration": 158
+            },
+            {
+              "phase": "expansion",
+              "start": "1991-10-01 00:00:00",
+              "end": "2008-07-01 00:00:00",
+              "duration": 225
+            },
+            {
+              "phase": "contraction",
+              "start": "2008-10-01 00:00:00",
+              "end": "2009-07-01 00:00:00",
+              "duration": 228
+            },
+            {
+              "phase": "expansion",
+              "start": "2009-10-01 00:00:00",
+              "end": "2020-01-01 00:00:00",
+              "duration": 269
+            },
+            {
+              "phase": "contraction",
+              "start": "2020-04-01 00:00:00",
+              "end": "2020-10-01 00:00:00",
+              "duration": 271
+            },
+            {
+              "phase": "expansion",
+              "start": "2021-01-01 00:00:00",
+              "end": "2025-04-01 00:00:00",
+              "duration": -2064
+            }
+          ],
+          "average_expansion_length": -74.0,
+          "average_contraction_length": 108.9090909090909
+        },
+        "price_analysis": {
+          "implied_deflator": "1947-01-01     11.140611\n1947-04-01     11.299045\n1947-07-01     11.488737\n1947-10-01     11.772067\n1948-01-01     11.865167\n                 ...    \n2024-04-01    124.943298\n2024-07-01    125.532243\n2024-10-01    126.257002\n2025-01-01    127.429114\n2025-04-01    128.058896\nLength: 314, dtype: float64",
+          "deflator_growth": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01    6.503733\n                ...   \n2024-04-01    2.577700\n2024-07-01    2.251595\n2024-10-01    2.446899\n2025-01-01    2.630161\n2025-04-01    2.493610\nLength: 314, dtype: float64",
+          "current_deflator_growth": 2.49360966908454
+        },
+        "productivity_analysis": {
+          "average_productivity_growth": 2.006148039468406,
+          "recent_productivity_trend": 1.8431205901590366,
+          "productivity_volatility": 2.5680497889578913,
+          "moving_average": "1948-01-01         NaN\n1948-04-01         NaN\n1948-07-01         NaN\n1948-10-01         NaN\n1949-01-01         NaN\n                ...   \n2024-04-01    1.810789\n2024-07-01    1.822551\n2024-10-01    1.955145\n2025-01-01    1.923594\n2025-04-01    1.843121\nLength: 310, dtype: float64"
+        },
+        "strength_indicators": {
+          "growth_relative_to_average": -1.1614415883983242,
+          "growth_percentile": 26.129032258064516
+        }
+      },
+      "insights": {
+        "summary": {
+          "current_gdp_growth": "1.99%",
+          "historical_average_growth": "3.15%",
+          "growth_vs_historical": "-1.16 pp vs historical average",
+          "cycle_phase_duration": "-2064 quarters",
+          "average_productivity_growth": "2.01%",
+          "gdp_deflator_growth": "2.49%"
+        },
+        "alerts": [],
+        "observations": [],
+        "economic_assessment": {
+          "growth_status": "Moderate Growth",
+          "business_cycle_phase": "Expansion",
+          "recession_risk": "Low"
+        }
+      },
+      "timestamp": "2025-08-20T17:02:58.048404"
+    },
+    "trade": {
+      "agent_name": "TradeAgent",
+      "analysis_period": {
+        "start_date": "2020-01-01",
+        "end_date": "2022-12-31"
+      },
+      "data_summary": {
+        "exports": {
+          "mean": 822.9180764331211,
+          "median": 314.2615,
+          "std": 947.6336775315731,
+          "min": 11.704,
+          "max": 3266.413,
+          "latest": 3241.946,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        },
+        "imports": {
+          "mean": 1047.3362675159235,
+          "median": 441.704,
+          "std": 1227.4147906300636,
+          "min": 7.519,
+          "max": 4511.554,
+          "latest": 4114.33,
+          "count": 314,
+          "start_date": "1947-01-01",
+          "end_date": "2025-04-01"
+        },
+        "trade_balance": {
+          "mean": -40548.33084577115,
+          "median": -41500.0,
+          "std": 22403.466191952506,
+          "min": -138316.0,
+          "max": -831.0,
+          "latest": -60177.0,
+          "count": 402,
+          "start_date": "1992-01-01",
+          "end_date": "2025-06-01"
+        }
+      },
+      "analysis_results": {
+        "growth_rates": {
+          "exports_mom": "1946-01-01          NaN\n1946-04-01          NaN\n1946-07-01          NaN\n1946-10-01          NaN\n1947-01-01          NaN\n                ...    \n2024-04-01    11.096105\n2024-07-01    25.097382\n2024-10-01     0.237370\n2025-01-01    16.945670\n2025-04-01    -8.988576\nLength: 318, dtype: float64",
+          "exports_yoy": "1946-01-01          NaN\n1946-04-01          NaN\n1946-07-01          NaN\n1946-10-01          NaN\n1947-01-01          NaN\n                ...    \n2024-04-01    25.919389\n2024-07-01    25.298169\n2024-10-01    16.474130\n2025-01-01    14.663366\n2025-04-01     5.547523\nLength: 318, dtype: float64",
+          "imports_mom": "1946-01-01           NaN\n1946-04-01           NaN\n1946-07-01           NaN\n1946-10-01           NaN\n1947-01-01           NaN\n                 ...    \n2024-04-01     28.496071\n2024-07-01     30.370295\n2024-10-01     -6.617331\n2025-01-01    107.376915\n2025-04-01   -105.655125\nLength: 318, dtype: float64",
+          "imports_yoy": "1946-01-01          NaN\n1946-04-01          NaN\n1946-07-01          NaN\n1946-10-01          NaN\n1947-01-01          NaN\n                ...    \n2024-04-01    21.588425\n2024-07-01    20.388443\n2024-10-01    12.345698\n2025-01-01    14.922326\n2025-04-01     0.504853\nLength: 318, dtype: float64"
+        },
+        "current_values": {
+          "exports": 3241.946,
+          "imports": 4114.33,
+          "trade_balance": -60177.0,
+          "exports_mom": -8.988575541427313,
+          "exports_yoy": 5.547523059197124,
+          "imports_mom": -105.65512459786581,
+          "imports_yoy": 0.504853477191447
+        },
+        "trade_balance_analysis": {
+          "calculated_balance": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01      10.875\n                ...   \n2024-04-01    -906.871\n2024-07-01    -943.683\n2024-10-01    -920.084\n2025-01-01   -1245.141\n2025-04-01    -872.384\nLength: 318, dtype: float64",
+          "current_balance": -872.384,
+          "average_balance": -224.41819108280257,
+          "balance_trend": "1946-01-01           NaN\n1946-04-01           NaN\n1946-07-01           NaN\n1946-10-01           NaN\n1947-01-01           NaN\n                 ...    \n2024-04-01   -881.901750\n2024-07-01   -886.485333\n2024-10-01   -886.442667\n2025-01-01   -900.450750\n2025-04-01   -887.973417\nLength: 318, dtype: float64",
+          "export_import_ratio": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01    2.446336\n                ...   \n2024-04-01    0.776698\n2024-07-01    0.773370\n2024-10-01    0.777812\n2025-01-01    0.724011\n2025-04-01    0.787965\nLength: 318, dtype: float64",
+          "coverage_ratio": "1946-01-01           NaN\n1946-04-01           NaN\n1946-07-01           NaN\n1946-10-01           NaN\n1947-01-01    244.633595\n                 ...    \n2024-04-01     77.669832\n2024-07-01     77.336968\n2024-10-01     77.781185\n2025-01-01     72.401062\n2025-04-01     78.796450\nLength: 318, dtype: float64",
+          "balance_volatility": "1946-01-01         NaN\n1946-04-01         NaN\n1946-07-01         NaN\n1946-10-01         NaN\n1947-01-01         NaN\n                ...   \n2024-04-01    1.249775\n2024-07-01    1.230743\n2024-10-01    1.230443\n2025-01-01    1.904023\n2025-04-01    2.388544\nLength: 318, dtype: float64"
+        },
+        "official_trade_balance": {
+          "series": "1992-01-01     -2026.0\n1992-02-01      -831.0\n1992-03-01     -2641.0\n1992-04-01     -3109.0\n1992-05-01     -3919.0\n                ...   \n2025-02-01   -122011.0\n2025-03-01   -138316.0\n2025-04-01    -60257.0\n2025-05-01    -71664.0\n2025-06-01    -60177.0\nLength: 402, dtype: float64",
+          "current_balance": -60177.0,
+          "average_balance": -40548.33084577115,
+          "balance_growth": "1992-01-01           NaN\n1992-02-01           NaN\n1992-03-01           NaN\n1992-04-01           NaN\n1992-05-01           NaN\n                 ...    \n2025-02-01     83.665758\n2025-03-01    108.728458\n2025-04-01    -17.580358\n2025-05-01     -3.749866\n2025-06-01    -18.560873\nLength: 402, dtype: float64",
+          "trend": "1992-01-01             NaN\n1992-02-01             NaN\n1992-03-01             NaN\n1992-04-01             NaN\n1992-05-01             NaN\n                  ...     \n2025-02-01   -85192.416667\n2025-03-01   -91196.583333\n2025-04-01   -90125.500000\n2025-05-01   -89892.833333\n2025-06-01   -88749.916667\nLength: 402, dtype: float64"
+        },
+        "export_import_analysis": {
+          "exports_summary": {
+            "mean": 822.9180764331211,
+            "median": 314.2615,
+            "std": 947.6336775315731,
+            "min": 11.704,
+            "max": 3266.413,
+            "latest": 3241.946,
+            "count": 314,
+            "start_date": "1947-01-01",
+            "end_date": "2025-04-01"
+          },
+          "imports_summary": {
+            "mean": 1047.3362675159235,
+            "median": 441.704,
+            "std": 1227.4147906300636,
+            "min": 7.519,
+            "max": 4511.554,
+            "latest": 4114.33,
+            "count": 314,
+            "start_date": "1947-01-01",
+            "end_date": "2025-04-01"
+          },
+          "exports_growth_summary": {
+            "mean": 25.391174831147502,
+            "median": 23.26489058422043,
+            "std": 23.466567288730786,
+            "min": -39.10858080730368,
+            "max": 127.56960295906299,
+            "latest": 5.547523059197124,
+            "count": 302,
+            "start_date": "1950-01-01",
+            "end_date": "2025-04-01"
+          },
+          "imports_growth_summary": {
+            "mean": 29.108232951139332,
+            "median": 27.102563220140862,
+            "std": 21.495506363887227,
+            "min": -19.022382353143797,
+            "max": 120.46206751804193,
+            "latest": 0.504853477191447,
+            "count": 302,
+            "start_date": "1950-01-01",
+            "end_date": "2025-04-01"
+          },
+          "correlation": 0.9956877499689437,
+          "exports_volatility": 947.6336775315731,
+          "imports_volatility": 1227.4147906300636
+        },
+        "price_analysis": {},
+        "competitiveness_analysis": {
+          "export_import_growth_diff": "1950-01-01    -62.730444\n1950-04-01    -63.806862\n1950-07-01   -106.818618\n1950-10-01    -87.227373\n1951-01-01    -65.545611\n                 ...    \n2024-04-01      4.330965\n2024-07-01      4.909726\n2024-10-01      4.128432\n2025-01-01     -0.258960\n2025-04-01      5.042670\nLength: 302, dtype: float64",
+          "current_growth_diff": 5.042669582005677,
+          "average_growth_diff": -3.717058119991832,
+          "competitiveness_trend": "1950-01-01         NaN\n1950-04-01         NaN\n1950-07-01         NaN\n1950-10-01         NaN\n1951-01-01         NaN\n                ...   \n2024-04-01   -2.135603\n2024-07-01   -1.034169\n2024-10-01   -0.087350\n2025-01-01    0.989296\n2025-04-01    2.138789\nLength: 302, dtype: float64",
+          "export_advantage_periods": "125",
+          "import_advantage_periods": "177"
+        },
+        "seasonal_analysis": {
+          "exports": {
+            "monthly_averages": {
+              "1": 822.9136455696203,
+              "4": 830.4909367088608,
+              "7": 813.1381025641025,
+              "10": 825.0325897435897
+            },
+            "monthly_std": {
+              "1": 956.0441805486419,
+              "4": 960.0407011122956,
+              "7": 941.1350766899494,
+              "10": 951.2708886080253
+            },
+            "peak_month": "4",
+            "trough_month": "7",
+            "seasonal_range": 17.352834144758276,
+            "coefficient_variation": 0.8804151362502997
+          },
+          "imports": {
+            "monthly_averages": {
+              "1": 1051.4696835443037,
+              "4": 1055.435417721519,
+              "7": 1034.437512820513,
+              "10": 1047.8456282051282
+            },
+            "monthly_std": {
+              "1": 1248.0562189026598,
+              "4": 1242.0007067504657,
+              "7": 1216.9007206600202,
+              "10": 1225.7415962280938
+            },
+            "peak_month": "4",
+            "trough_month": "7",
+            "seasonal_range": 20.997904901005995,
+            "coefficient_variation": 0.8704454205888019
+          },
+          "trade_balance": {
+            "monthly_averages": {
+              "1": -41629.970588235294,
+              "2": -40854.64705882353,
+              "3": -41942.26470588235,
+              "4": -40252.17647058824,
+              "5": -40256.794117647056,
+              "6": -40318.55882352941,
+              "7": -39996.72727272727,
+              "8": -39781.545454545456,
+              "9": -40066.57575757576,
+              "10": -39881.15151515151,
+              "11": -40212.21212121212,
+              "12": -41327.818181818184
+            },
+            "monthly_std": {
+              "1": 26140.780129655413,
+              "2": 25422.097086902573,
+              "3": 27440.76395405844,
+              "4": 21400.2837739194,
+              "5": 21767.92394407689,
+              "6": 21286.529421196527,
+              "7": 21200.210410619642,
+              "8": 20642.59027183076,
+              "9": 21063.31754055837,
+              "10": 20993.198252828835,
+              "11": 21121.503588993102,
+              "12": 22397.44848394363
+            },
+            "peak_month": "8",
+            "trough_month": "3",
+            "seasonal_range": 2160.7192513368936,
+            "coefficient_variation": -1.778932492126387
+          }
+        },
+        "trade_intensity": {
+          "total_trade_volume": "1947-01-01      25.913\n1947-04-01      27.700\n1947-07-01      27.096\n1947-10-01      25.983\n1948-01-01      26.541\n                ...   \n2024-04-01    7215.513\n2024-07-01    7384.267\n2024-10-01    7361.942\n2025-01-01    7777.967\n2025-04-01    7356.276\nLength: 314, dtype: float64",
+          "total_trade_growth": "1947-01-01          NaN\n1947-04-01          NaN\n1947-07-01          NaN\n1947-10-01          NaN\n1948-01-01          NaN\n                ...    \n2024-04-01    23.444530\n2024-07-01    22.481450\n2024-10-01    14.115353\n2025-01-01    14.813431\n2025-04-01     2.666522\nLength: 314, dtype: float64",
+          "exports_share_of_trade": "1947-01-01    70.983676\n1947-04-01    70.386282\n1947-07-01    71.719073\n1947-10-01    67.875149\n1948-01-01    63.739121\n                ...    \n2024-04-01    43.715825\n2024-07-01    43.610178\n2024-10-01    43.751078\n2025-01-01    41.995717\n2025-04-01    44.070478\nLength: 314, dtype: float64",
+          "imports_share_of_trade": "1947-01-01    29.016324\n1947-04-01    29.613718\n1947-07-01    28.280927\n1947-10-01    32.124851\n1948-01-01    36.260879\n                ...    \n2024-04-01    56.284175\n2024-07-01    56.389822\n2024-10-01    56.248922\n2025-01-01    58.004283\n2025-04-01    55.929522\nLength: 314, dtype: float64",
+          "trade_growth_volatility": "1947-01-01         NaN\n1947-04-01         NaN\n1947-07-01         NaN\n1947-10-01         NaN\n1948-01-01         NaN\n                ...   \n2024-04-01    8.507558\n2024-07-01    7.986381\n2024-10-01    6.686247\n2025-01-01    6.342037\n2025-04-01    7.259068\nLength: 314, dtype: float64"
+        }
+      },
+      "insights": {
+        "summary": {
+          "current_exports": "$3241.9B",
+          "current_imports": "$4114.3B",
+          "current_trade_balance": "$-60177.0B",
+          "export_growth": "5.5%",
+          "import_growth": "0.5%",
+          "export_coverage": "78.8%"
+        },
+        "alerts": [
+          "Large trade deficit: $60177.0B",
+          "Low export coverage: exports cover only 78.8% of imports"
+        ],
+        "observations": [
+          "Export competitiveness improving: exports growing 5.0 pp faster than imports"
+        ],
+        "trade_assessment": {
+          "balance_status": "Trade Deficit",
+          "historical_competitiveness": "Generally Less Competitive"
+        }
+      },
+      "timestamp": "2025-08-20T17:03:11.507285"
+    }
+  },
+  "combined_insights": {
+    "economic_overview": {
+      "current_state": "Moderate Growth",
+      "growth_momentum": "Expansion",
+      "inflation_pressure": "2.73%",
+      "external_balance": "Trade Deficit",
+      "overall_assessment": "Stable Growth"
+    },
+    "cross_correlations": {
+      "inflation_gdp": "No data",
+      "trade_gdp": "No data",
+      "inflation_trade": "No data",
+      "insights": [
+        "Price pressures evident in multiple sectors",
+        "High volatility observed across economic indicators"
+      ]
+    },
+    "policy_implications": [
+      "Monetary Policy: Consider tighter policy to combat inflation",
+      "Trade Policy: Monitor trade deficit and competitiveness"
+    ],
+    "risk_assessment": {
+      "overall_risk_level": "Medium-High",
+      "risk_factors": [
+        "Trade: Large trade deficit: $60177.0B",
+        "Trade: Low export coverage: exports cover only 78.8% of imports"
+      ],
+      "risk_mitigation_factors": [
+        "Trade: Export competitiveness improving: exports growing 5.0 pp faster than imports"
+      ],
+      "key_risks": []
+    },
+    "forecasting_signals": [
+      "Business Cycle: Currently in Expansion phase",
+      "Inflation Signal: Producer Price is increasing with magnitude of 1.52 percentage points",
+      "Trade Signal: Export competitiveness improving: exports growing 5.0 pp faster than imports"
+    ]
+  },
+  "summary": {
+    "key_findings": [
+      "Inflation - Current Headline Inflation: 2.73%; Current Core Inflation: 3.05%; Distance From Fed Target: +0.58 percentage points",
+      "Gdp - Current Gdp Growth: 1.99%; Historical Average Growth: 3.15%; Growth Vs Historical: -1.16 pp vs historical average",
+      "Trade - Current Exports: $3241.9B; Current Imports: $4114.3B; Current Trade Balance: $-60177.0B"
+    ],
+    "current_economic_state": "Stable Growth",
+    "major_risks": [
+      "Trade: Large trade deficit: $60177.0B",
+      "Trade: Low export coverage: exports cover only 78.8% of imports"
+    ],
+    "opportunities": [
+      "Export competitiveness improving: exports growing 5.0 pp faster than imports"
+    ],
+    "recommendations": [
+      "Monetary Policy: Consider tighter policy to combat inflation",
+      "Trade Policy: Monitor trade deficit and competitiveness"
+    ]
+  }
+}
