@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building an AI-Powered Economic Analysis System: A Multi-Agent Approach</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #333333;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #001F54, #002B5B);
+            color: #FFFFFF;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 31, 84, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #333333;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid #002B5B;
+            padding-left: 20px;
+            background: linear-gradient(90deg, rgba(0, 31, 84, 0.1), transparent);
+            padding: 15px 20px;
+        }
+        
+        h3 {
+            color: #333333;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 31, 84, 0.1), rgba(0, 43, 91, 0.05));
+            border: 2px solid #001F54;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 2px 10px rgba(0, 31, 84, 0.2);
+        }
+        
+        .code-block {
+            background-color: #001F54;
+            color: #FFFFFF;
+            border: 1px solid #002B5B;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Monaco', 'Consolas', monospace;
+            overflow-x: auto;
+        }
+        
+        .results-showcase {
+            background: linear-gradient(135deg, rgba(0, 31, 84, 0.05), rgba(0, 43, 91, 0.1));
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #002B5B;
+        }
+        
+        .metric {
+            background-color: rgba(0, 31, 84, 0.1);
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 3px solid #001F54;
+        }
+        
+        .conclusion {
+            background: #FFFFFF;
+            color: #333333;
+            padding: 30px;
+            border: 2px solid #001F54;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 31, 84, 0.3);
+        }
+        
+        .acknowledgements {
+            background: linear-gradient(135deg, rgba(0, 31, 84, 0.08), rgba(0, 43, 91, 0.03));
+            border: 2px solid #001F54;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 2px 10px rgba(0, 31, 84, 0.15);
+        }
+        
+        .chart-container {
+            background: #FFFFFF;
+            border: 1px solid #002B5B;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 31, 84, 0.1);
+        }
+        
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chart-caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #002B5B;
+            font-size: 0.95em;
+        }
+        
+        a {
+            color: #002B5B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tech-item {
+            background-color: rgba(0, 31, 84, 0.2);
+            color: #FFFFFF;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #002B5B;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .author-info {
+            background: linear-gradient(135deg, rgba(0, 31, 84, 0.05), rgba(0, 43, 91, 0.1));
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #002B5B;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Building an AI-Powered Economic Analysis System</h1>
+        <div class="subtitle">A Multi-Agent Approach to Understanding the US Economy</div>
+    </div>
+
+    <p>In today's rapidly evolving economic landscape, understanding complex financial patterns and predicting future trends has become more crucial than ever. Traditional economic analysis often relies on manual processes and fragmented data sources, making it challenging for analysts to capture the full picture of economic health. This challenge inspired me to develop a comprehensive Multi-Agent Economic Analysis System that harnesses the power of artificial intelligence and machine learning to provide deep insights into the United States economy.</p>
+
+    <h2>The Vision Behind Multi-Agent Architecture</h2>
+
+    <p>The concept of multi-agent systems represents a paradigm shift from monolithic analytical approaches to specialized, collaborative intelligence. Rather than building a single, complex system that attempts to analyze all economic indicators simultaneously, I designed five specialized agents, each with deep expertise in their respective economic domains. This approach mirrors how economic research institutions organize their teams, with specialists focusing on inflation, growth, trade, forecasting, and business cycles working together to provide comprehensive economic insights.</p>
+
+    <div class="highlight-box">
+        <p>The multi-agent architecture enables each component to develop sophisticated domain-specific analytics while maintaining the ability to cross-reference findings and generate holistic economic assessments. This distributed intelligence approach ensures that nuanced patterns within each economic sector are captured and analyzed with the appropriate level of specialization.</p>
+    </div>
+
+    <h2>Meet the Five Economic Specialists</h2>
+
+    <h3>The Inflation Agent: Monitoring Price Stability</h3>
+
+    <p>The Inflation Agent serves as the system's price stability watchdog, continuously monitoring Consumer Price Index data, Personal Consumption Expenditures, and Producer Price Indices. This agent goes beyond simple inflation rate calculations, performing sophisticated analysis of core versus headline inflation divergence, volatility assessments, and trend analysis. The agent maintains constant awareness of Federal Reserve policy targets, providing real-time analysis of how current inflation levels compare to the central bank's two percent target and generating insights about potential monetary policy implications.</p>
+
+    <h3>The GDP Agent: Tracking Economic Growth</h3>
+
+    <p>Economic growth analysis requires understanding not just current GDP figures but the complex patterns of expansion and contraction that define business cycles. The GDP Agent specializes in analyzing Real and Nominal GDP data, calculating growth rates across multiple timeframes, and identifying business cycle phases through sophisticated statistical analysis. This agent maintains historical context by comparing current growth patterns to long-term averages and can identify potential recession risks through technical analysis of consecutive quarters of negative growth.</p>
+
+    <div class="chart-container">
+        <img src="https://github.com/NatalieCheong/Multi-Agent_Economic_Analysis_Systems/blob/main/charts/GDPAgent_gdp_dashboard.png?raw=true" alt="GDP Agent Dashboard showing comprehensive GDP analysis">
+        <div class="chart-caption">
+            GDP Agent Dashboard: Comprehensive analysis of US economic growth patterns including real GDP trends, growth rates, and business cycle identification. The dashboard provides visual insights into current economic conditions relative to historical patterns.
+        </div>
+    </div>
+
+    <h3>The Trade Agent: Understanding Global Competitiveness</h3>
+
+    <p>In our interconnected global economy, international trade patterns provide crucial insights into economic competitiveness and external balance. The Trade Agent analyzes export and import data, calculates trade balance trends, and assesses competitiveness through growth differential analysis. This agent identifies seasonal patterns in trade data and evaluates the coverage ratio of exports to imports, providing insights into the sustainability of current trade patterns and the economy's external position.</p>
+
+    <h3>The Forecast Agent: Predicting Economic Futures</h3>
+
+    <p>Perhaps the most technically advanced component of the system, the Forecast Agent employs machine learning algorithms to generate twelve-month economic predictions across multiple indicators. Using Linear Regression, Random Forest, and Exponential Smoothing models, this agent creates comprehensive features from historical data including lag variables, moving averages, and seasonal patterns. The agent automatically selects the best-performing model for each economic series based on rigorous accuracy metrics, providing stakeholders with reliable forward-looking insights that complement historical analysis.</p>
+
+    <h3>The Economic Cycle Agent: Decoding Business Cycles</h3>
+
+    <p>Understanding where the economy stands within historical business cycle patterns requires sophisticated analysis of leading, coincident, and lagging indicators. The Economic Cycle Agent constructs composite indicators from multiple data sources, identifies cycle turning points through signal processing techniques, and determines the current phase of the business cycle with statistical confidence measures. This agent provides crucial context by analyzing how current economic conditions compare to historical cycle patterns and identifying early warning signals for potential economic transitions.</p>
+
+    <h2>Technical Implementation and Data Sources</h2>
+
+    <p>The system's foundation rests on robust integration with the Federal Reserve Economic Data API, providing access to over eight hundred thousand economic time series with historical data spanning back to 1947. This extensive historical context enables the system to identify long-term patterns and provide meaningful comparisons between current conditions and historical precedents.</p>
+
+    <div class="tech-stack">
+        <div class="tech-item">Python</div>
+        <div class="tech-item">FRED API</div>
+        <div class="tech-item">Pandas</div>
+        <div class="tech-item">Scikit-learn</div>
+        <div class="tech-item">Matplotlib</div>
+        <div class="tech-item">Seaborn</div>
+        <div class="tech-item">NumPy</div>
+        <div class="tech-item">SciPy</div>
+    </div>
+
+    <p>The system employs advanced statistical techniques including detrending algorithms for cycle analysis, rolling volatility calculations for risk assessment, and sophisticated feature engineering for machine learning models. Each agent implements caching mechanisms to optimize API usage and includes comprehensive error handling to ensure robust operation even when specific data series are unavailable.</p>
+
+    <div class="code-block">
+        # Example: Running comprehensive economic analysis
+        python main.py
+
+        # Interactive mode for detailed exploration
+        python3 -i main.py
+        >>> orchestrator.run_individual_analysis('forecast')
+        >>> covid_impact = orchestrator.run_comprehensive_analysis('2020-01-01', '2022-12-31')
+    </div>
+
+    <h2>Real-World Analysis Results</h2>
+
+    <p>The system's practical value becomes evident through its analysis of recent economic conditions. During the August 2025 analysis period, the system successfully identified the current economic state as "Stable Growth" with the economy maintaining an expansion phase despite various challenges.</p>
+
+    <div class="results-showcase">
+        <h3>Key Economic Findings from Latest Analysis</h3>
+        
+        <div class="metric">Current headline inflation stands at 2.73 percent, very close to the Federal Reserve's two percent target, indicating effective monetary policy transmission.</div>
+        
+        <div class="metric">Core inflation remains slightly elevated at 3.05 percent, suggesting underlying price pressures that warrant continued monitoring.</div>
+        
+        <div class="metric">GDP growth of 1.99 percent falls below the historical average of 3.15 percent, indicating moderate but below-trend economic expansion.</div>
+        
+        <div class="metric">Export competitiveness shows improvement with exports growing 5.0 percentage points faster than imports, despite maintaining a significant trade deficit.</div>
+        
+        <div class="metric">The forecasting models achieved strong performance with linear regression emerging as the best-performing algorithm across eight economic series.</div>
+    </div>
+
+    <p>The system's analysis of the COVID-19 economic impact demonstrates its ability to capture complex economic transitions. During the 2020-2022 period, the system correctly identified the economy's resilience, tracking the initial disruption, policy responses, and subsequent recovery while maintaining its classification of "Stable Growth" despite unprecedented volatility.</p>
+
+    <h2>Advanced Analytics and Visualization</h2>
+
+    <p>Beyond raw data analysis, the system generates comprehensive visualizations that make complex economic relationships accessible to both technical and non-technical audiences. Dashboard-style charts provide immediate visual context for current economic conditions, while detailed distribution analyses reveal underlying patterns in economic data that might not be apparent through simple summary statistics.</p>
+
+    <p>The visualization capabilities include inflation dashboards with Federal Reserve target overlays, GDP growth timelines with business cycle phase shading, trade competitiveness analysis charts, and forecast visualization with confidence intervals. These visual representations transform complex economic data into actionable insights that support informed decision-making.</p>
+
+    <h2>Addressing Limitations and Future Development</h2>
+
+    <p>While the system demonstrates significant analytical capabilities, it operates within important limitations that users must understand. The analysis focuses specifically on the United States economy using Federal Reserve data, and economic forecasts inherently carry uncertainty that increases with longer time horizons. The machine learning models, while sophisticated, are based on historical patterns and may not fully capture unprecedented economic events or structural changes in the economy.</p>
+
+    <div class="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p>This project would not have been possible without the exceptional data resources provided by the <strong>Federal Reserve Economic Data (FRED)</strong> platform, maintained by the Federal Reserve Bank of St. Louis. FRED's comprehensive database of economic time series, spanning decades of historical data with reliable real-time updates, forms the foundation of this multi-agent analysis system. The accessibility, quality, and breadth of FRED's economic indicators enable researchers and developers worldwide to conduct sophisticated economic analysis and contribute to our collective understanding of economic patterns and trends.</p>
+        
+        <p>Special appreciation goes to the Federal Reserve Bank of St. Louis for maintaining this invaluable public resource and for their commitment to open economic data that democratizes access to high-quality economic information.</p>
+    </div>
+
+    <div class="conclusion">
+        <h2>Looking Forward: The Future of AI-Driven Economic Analysis</h2>
+        <p>The Multi-Agent Economic Analysis System represents a significant step forward in democratizing sophisticated economic analysis through artificial intelligence. By combining specialized domain expertise with advanced machine learning techniques, the system provides insights that would traditionally require teams of economic analysts and significant computational resources.</p>
+        
+        <p>As economic complexity continues to increase and data volumes grow, multi-agent approaches will become increasingly important for managing analytical complexity while maintaining depth and accuracy. This project demonstrates the potential for AI-powered systems to augment human expertise in economic analysis, providing tools that enhance rather than replace human judgment in understanding our complex economic landscape.</p>
+        
+        <p>The complete project is available on <a href="https://github.com/NatalieCheong/Multi-Agent_Economic_Analysis_Systems">GitHub</a>, inviting collaboration and further development from the global research community.</p>
+    </div>
+
+    <div class="author-info">
+        <h3><span class="emoji">👩‍💻</span>About the Author</h3>
+        <p><strong>Natalie Cheong</strong> is a passionate AI developer exploring the intersection of artificial intelligence, multi-agent systems, and AI safety. This project demonstrates practical applications of intelligent agent and economic analysis systems.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/natalie-insybell">LinkedIn</a></p>
+    </div>
+</body>
+</html>
